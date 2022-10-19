@@ -1,6 +1,8 @@
 # Cache
 mkdir -p /tmp/rom/app
 cd /tmp/rom/app
+echo "${GIT_COOKIES}" > ~/git_cookies.sh
+bash ~/git_cookies.sh
 export PATH="/usr/lib/ccache:$PATH"
 export CCACHE_DIR=$WORKDIR/ccache
 export CCACHE_EXEC=$(which ccache)
@@ -50,5 +52,4 @@ echo "Mirror: ${MIRROR_LINK}" || { echo "WARNING: Failed to Mirror the Build!"; 
 echo "=============================================="
 
 # Remove 
-
 rm -rf out/target/product/lava
