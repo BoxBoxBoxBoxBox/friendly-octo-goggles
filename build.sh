@@ -1,4 +1,5 @@
 # Cache
+mkdir -p $WORKDIR/rom/app
 cd $WORKDIR/rom
 export PATH="/usr/lib/ccache:$PATH"
 export CCACHE_DIR=$WORKDIR/ccache
