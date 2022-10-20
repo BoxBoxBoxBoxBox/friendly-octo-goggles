@@ -23,17 +23,17 @@ source build/envsetup.sh
 lunch lineage_lava-userdebug
 export SELINUX_IGNORE_NEVERALLOWS=true
 export TZ=Asia/Dhaka #put before last build command
-make Dialer
+make dialer
 
 # Upload
-cd out/target/product/lava/system/system_ext/priv-app/Dialer
+cd out/target/product/lava/system/system_ext/priv-app/dialer
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
     TIMEOUT=20160
 fi
 
-export OUTPUT="Dialer.apk"
+export OUTPUT="dialer.apk"
 FILENAME=$(echo $OUTPUT)
 
 # Upload to WeTransfer
