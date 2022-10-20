@@ -26,7 +26,7 @@ export TZ=Asia/Dhaka #put before last build command
 make GameSpace
 
 # Upload
-cd out/target/product/lava
+cd out/target/product/lava/system/system_ext/priv-app/GameSpace
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
