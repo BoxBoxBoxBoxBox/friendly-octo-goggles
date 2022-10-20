@@ -23,17 +23,17 @@ source build/envsetup.sh
 lunch lineage_lava-userdebug
 export SELINUX_IGNORE_NEVERALLOWS=true
 export TZ=Asia/Dhaka #put before last build command
-make GameSpace
+make Dialer
 
 # Upload
-cd out/target/product/lava/system/system_ext/priv-app/GameSpace
+cd out/target/product/lava/system/system_ext/priv-app/Dialer
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
     TIMEOUT=20160
 fi
 
-export OUTPUT="GameSpace.apk"
+export OUTPUT="Dialer.apk"
 FILENAME=$(echo $OUTPUT)
 
 # Upload to WeTransfer
