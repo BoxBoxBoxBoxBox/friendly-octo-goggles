@@ -26,14 +26,14 @@ export TZ=Asia/Dhaka #put before last build command
 make Eleven
 
 # Upload
-cd out/target/product/lava/system/system_ext/priv-app/dialer
+cd out/target/product/lava/product/priv-app/Eleven/
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
     TIMEOUT=20160
 fi
 
-export OUTPUT="dialer.apk"
+export OUTPUT="Eleven.apk"
 FILENAME=$(echo $OUTPUT)
 
 # Upload to WeTransfer
