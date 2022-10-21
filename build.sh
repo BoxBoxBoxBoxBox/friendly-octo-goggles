@@ -26,7 +26,7 @@ export TZ=Asia/Dhaka #put before last build command
 make Dialer
 
 # Upload
-cd out/target/product/lava/product/priv-app/Dialer/Dialer.apk
+cd out/target/product/lava/product/priv-app/Dialer/
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
