@@ -23,7 +23,7 @@ source build/envsetup.sh
 lunch lineage_lava-userdebug
 export SELINUX_IGNORE_NEVERALLOWS=true
 export TZ=Asia/Dhaka #put before last build command
-make Eleven
+make Dialer
 
 # Upload
 cd out/target/product/lava/product/priv-app/Eleven/
