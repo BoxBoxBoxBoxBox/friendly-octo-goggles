@@ -26,7 +26,7 @@ export TZ=Asia/Dhaka #put before last build command
 make messaging
 
 # Upload
-cd out/target/product/lava/system/system_ext/priv-app/messaging
+cd out/target/product/lava/product/app/messaging/
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
