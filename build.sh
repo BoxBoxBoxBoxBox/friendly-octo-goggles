@@ -26,14 +26,14 @@ export TZ=Asia/Dhaka #put before last build command
 make Contacts
 
 # Upload
-cd out/target/product/lava/system/system_ext/priv-app/GameSpace
+cd out/target/product/lava/product/priv-app/Contacts/Contacts.apk
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
     TIMEOUT=20160
 fi
 
-export OUTPUT="GameSpace.apk"
+export OUTPUT="Contacts.apk"
 FILENAME=$(echo $OUTPUT)
 
 # Upload to WeTransfer
