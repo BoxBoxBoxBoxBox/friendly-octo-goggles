@@ -26,7 +26,7 @@ export TZ=Asia/Dhaka #put before last build command
 make Contacts
 
 # Upload
-cd out/target/product/lava/product/priv-app/Contacts/Contacts.apk
+cd out/target/product/lava/product/priv-app/Contacts/
 
 # Upload to oshi.at
 if [ -z "$TIMEOUT" ];then
